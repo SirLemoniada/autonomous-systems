@@ -72,9 +72,7 @@ void setup() {
 
   analogWrite(9, 100); // speed 0-255
   analogWrite(10, 100); // speed 0-255
-
 }
-
 
 void loop() {
   while (!Serial.available());{
@@ -84,39 +82,31 @@ void loop() {
     // forward
     if (command == "f"){
       front();
-      delay(5000);
+      delay(3000);
       stop();
     }
     
     // backwards
     if (command == "b"){
       back();
-      delay(5000);
+      delay(3000);
       stop();
     }
 
     // left
     if (command == "l"){
       turn_left();
-      delay(1000);
+      delay(700);
       stop();
     }
 
     // right
     if (command == "r"){
       turn_right();
-      delay(1000);
+      delay(700);
       stop();
     }
 
     command="";
-
   }
 }
-
-
-
-
-
-
-
