@@ -1,5 +1,3 @@
-# autonomous-systems
-
 ## How to run
 
 1. Connect the circuit according to the following scheme:
